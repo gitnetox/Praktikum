@@ -25,7 +25,7 @@ section h1 {
   white-space: nowrap;
 }
 
-#section01 { background: url(https://img.freepik.com/fotos-kostenlos/draufsicht-schneidet-salami-pizza_23-2148765311.jpg?w=2000) center center / cover no-repeat;}
+#section01 { background: url(https://www.roma-selfkant.de/assets/images/headslide/home-1920.jpg) center center / cover no-repeat;}
 
 
 .demo a {
@@ -88,7 +88,7 @@ section h1 {
 }
 
 #section02 #content #header #first {
-  color: #f48982;
+    color: #f48982;
 }
 
 #section02 #content #header a {
@@ -108,22 +108,64 @@ section h1 {
   justify-content:center;
 }
 
-#section02 #content #dishes #card {
+#section02 #content #dishes .card {
     color: #fff;
     font: normal 400 20px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     justify-content: center;
     display: flex;
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: 200px;
     border-radius: 5px;
-    background: rgb(70, 70, 70);
+    background: rgb(94, 94, 94);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition-duration: 500ms;
     margin-left: 2em;
     margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
 }
+
+#section02 #content #dishes .card p {
+  margin-bottom: 10px;
+}
+
+#section02 #content #dishes .card a {
+  margin-bottom: 10px;
+}
+
+#section02 #content #dishes .card button {
+  margin-top: 10px;    
+  outline: 1px solid #f48982;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%; 
+}
+
+#section02 #content #dishes .card button:hover {
+  background-color: #fdf2e9;
+  color: #f48982;
+}
+
+.btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 9px;
+    border: none;
+  
+    cursor: pointer;
+    font-family: inherit;
+  
+    transition: all 0.3s;
+  }
 
 #section03 #content{
     display: flex;
