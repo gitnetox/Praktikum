@@ -29,7 +29,7 @@
     font-size: 28px;
   }
   
-  .container {
+  #container {
     width: 400px;
     margin: auto;
     padding: 36px 48px 48px 48px;
@@ -37,8 +37,14 @@
     font : normal 300 75px/1 'Josefin Sans', sans-serif;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 500ms;
+    -webkit-box-shadow: 5px 5px 33px 5px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 33px 5px rgba(0,0,0,0.69);
   }
   
+  #container:hover {
+    transform: scale(1.05);
+  }
   .login-title {
     padding: 15px;
     font-size: 22px;
@@ -49,7 +55,7 @@
   .login-form {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 16px;
+    row-gap: 10px;
   }
   
   .login-form label {
@@ -67,13 +73,6 @@
   .login-form input:focus {
     outline: none;
     box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
-  }
-  
-  .btn--form {
-    background-color: #f48982;
-    color: #fdf2e9;
-    align-self: end;
-    padding: 8px;
   }
   
   .btn,
@@ -94,9 +93,10 @@
   
   button {
     outline: 1px solid #f48982;
+    padding: 7px;
   }
   
-  .btn--form:hover {
+  button:hover {
     background-color: #fdf2e9;
     color: #f48982;
   }
