@@ -93,7 +93,7 @@
   
   button {
     outline: 1px solid #f48982;
-    padding: 7px;
+    padding: 10px;
   }
   
   button:hover {
@@ -101,3 +101,7 @@
     color: #f48982;
   }
   
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 140, 140);
+    opacity: 1; /* Firefox */
+  }
